@@ -1,0 +1,417 @@
+/* ===== Variabel warna ===== */
+body {
+  --faza_ink: #1d2b2a;
+  --faza_hijau: #2f7d4f;
+  --faza_cabai: #d62f1f;
+  --faza_kuning: #f6c445;
+  --faza_kertas: #eef3e8;
+  --faza_putih: #fff;
+}
+
+/* ===== Dasar ===== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Figtree", system-ui, sans-serif;
+  background: var(--faza_kertas);
+  color: var(--faza_ink);
+  line-height: 1.6;
+  font-size: 17px;
+}
+a {
+  color: inherit;
+}
+img {
+  max-width: 100%;
+}
+:focus-visible {
+  outline: 3px solid var(--faza_cabai);
+  outline-offset: 2px;
+}
+.faza_wrap {
+  width: min(1120px, 92%);
+  margin: 0 auto;
+}
+.faza_judul {
+  font-family: "Bricolage Grotesque", Georgia, serif;
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+}
+
+/* ===== Header & navigasi ===== */
+#faza_header {
+  background: var(--faza_ink);
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
+#faza_header .faza_wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.7rem 0;
+}
+.faza_logo {
+  font-family: "Bricolage Grotesque", serif;
+  font-weight: 800;
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: var(--faza_kuning);
+}
+#faza_menu_nav {
+  display: flex;
+  gap: 0.2rem;
+  list-style: none;
+  flex-wrap: wrap;
+}
+#faza_menu_nav a {
+  display: block;
+  padding: 0.4rem 0.7rem;
+  border-radius: 99px;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+#faza_menu_nav a:hover {
+  background: #ffffff22;
+}
+#faza_menu_nav a[aria-current="page"] {
+  background: var(--faza_kuning);
+  color: var(--faza_ink);
+  font-weight: 700;
+}
+#faza_tombol_nav {
+  display: none;
+  background: none;
+  border: 2px solid #fff;
+  color: #fff;
+  border-radius: 8px;
+  padding: 0.3rem 0.7rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* ===== Hero & judul halaman ===== */
+.faza_hero {
+  padding: 3.5rem 0;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 2.5rem;
+  align-items: center;
+}
+.faza_hero h1 {
+  font-size: clamp(2.4rem, 6vw, 4.6rem);
+}
+.faza_hero p {
+  margin: 1rem 0 1.5rem;
+  max-width: 34rem;
+}
+.faza_judul_halaman {
+  background: var(--faza_hijau);
+  color: #fff;
+  padding: 3rem 0;
+}
+.faza_judul_halaman h1 {
+  font-size: clamp(2rem, 5vw, 3.4rem);
+}
+.faza_judul_halaman p {
+  max-width: 38rem;
+  margin-top: 0.6rem;
+}
+
+/* ===== Tombol ===== */
+.faza_tombol {
+  display: inline-block;
+  background: var(--faza_cabai);
+  color: #fff;
+  border: 0;
+  padding: 0.75rem 1.4rem;
+  border-radius: 10px;
+  font:
+    700 1rem "Figtree",
+    sans-serif;
+  text-decoration: none;
+  cursor: pointer;
+}
+.faza_tombol:hover {
+  filter: brightness(1.1);
+}
+.faza_tombol_alt {
+  background: var(--faza_ink);
+}
+
+/* ===== Section, kartu & grid ===== */
+.faza_section {
+  padding: 3rem 0;
+}
+.faza_section h2 {
+  font-size: clamp(1.7rem, 4vw, 2.4rem);
+  margin-bottom: 1.2rem;
+}
+.faza_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+}
+.faza_kartu {
+  background: var(--faza_putih);
+  border-radius: 14px;
+  padding: 1.2rem;
+  border: 2px solid var(--faza_ink);
+}
+.faza_kartu h3 {
+  font-family: "Bricolage Grotesque", serif;
+  font-size: 1.2rem;
+}
+.faza_ikon {
+  font-size: 2.6rem;
+  display: block;
+}
+.faza_harga {
+  color: var(--faza_hijau);
+  font-weight: 800;
+}
+
+/* ===== Struk pesanan ===== */
+.faza_struk {
+  background: #fff;
+  border: 2px dashed var(--faza_ink);
+  padding: 1.2rem;
+  font-family: ui-monospace, Menlo, monospace;
+  font-size: 0.9rem;
+  border-radius: 6px;
+  position: sticky;
+  top: 4.5rem;
+}
+.faza_struk h3 {
+  text-align: center;
+  font-family: "Bricolage Grotesque", serif;
+  font-size: 1.2rem;
+}
+.faza_struk ul {
+  list-style: none;
+  margin: 0.8rem 0;
+  border-top: 1px dashed #999;
+  border-bottom: 1px dashed #999;
+  padding: 0.5rem 0;
+  min-height: 3rem;
+}
+.faza_struk li {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 0.15rem 0;
+}
+.faza_struk_total {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 800;
+  margin-bottom: 0.8rem;
+}
+.faza_struk button,
+.faza_struk a {
+  width: 100%;
+  text-align: center;
+  margin-top: 0.4rem;
+}
+.faza_kecil {
+  background: var(--faza_kuning);
+  color: var(--faza_ink);
+  border: 0;
+  border-radius: 6px;
+  padding: 0.1rem 0.5rem;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+/* ===== Filter menu & tata letak dua kolom ===== */
+.faza_filter {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.2rem;
+}
+.faza_filter button,
+.faza_filter input {
+  padding: 0.5rem 1rem;
+  border-radius: 99px;
+  border: 2px solid var(--faza_ink);
+  background: #fff;
+  font:
+    600 0.95rem "Figtree",
+    sans-serif;
+  cursor: pointer;
+}
+.faza_filter button.faza_aktif {
+  background: var(--faza_ink);
+  color: #fff;
+}
+.faza_dua {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+/* ===== Galeri ===== */
+.faza_ubin {
+  height: 150px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  border: 2px solid var(--faza_ink);
+  cursor: pointer;
+  background: repeating-linear-gradient(
+    45deg,
+    var(--faza_kuning) 0 14px,
+    #f9d977 14px 28px
+  );
+}
+.faza_ubin:nth-child(3n + 2) {
+  background: repeating-linear-gradient(
+    45deg,
+    #9fd3ae 0 14px,
+    #b6e0c2 14px 28px
+  );
+}
+.faza_ubin:nth-child(3n) {
+  background: repeating-linear-gradient(
+    45deg,
+    #f2a79f 0 14px,
+    #f7bdb7 14px 28px
+  );
+}
+#faza_lightbox {
+  position: fixed;
+  inset: 0;
+  background: #000d;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+  z-index: 50;
+  gap: 1rem;
+}
+#faza_lightbox.faza_buka {
+  display: flex;
+}
+#faza_lb_isi {
+  font-size: 9rem;
+}
+
+/* ===== Formulir, FAQ & kalkulator ===== */
+.faza_formulir {
+  background: #fff;
+  border: 2px solid var(--faza_ink);
+  border-radius: 14px;
+  padding: 1.5rem;
+  display: grid;
+  gap: 1rem;
+}
+.faza_formulir label {
+  font-weight: 700;
+  display: block;
+  margin-bottom: 0.2rem;
+}
+.faza_formulir input,
+.faza_formulir select,
+.faza_formulir textarea {
+  width: 100%;
+  padding: 0.7rem;
+  border: 2px solid var(--faza_ink);
+  border-radius: 8px;
+  font:
+    1rem "Figtree",
+    sans-serif;
+}
+.faza_galat {
+  color: var(--faza_cabai);
+  font-size: 0.88rem;
+  min-height: 1.1rem;
+  font-weight: 600;
+}
+#faza_sukses {
+  display: none;
+  background: var(--faza_hijau);
+  color: #fff;
+  padding: 1.5rem;
+  border-radius: 14px;
+}
+.faza_faq {
+  background: #fff;
+  border: 2px solid var(--faza_ink);
+  border-radius: 10px;
+  padding: 0.8rem 1rem;
+  margin-bottom: 0.6rem;
+}
+.faza_faq summary {
+  font-weight: 700;
+  cursor: pointer;
+}
+.faza_hasil {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--faza_hijau);
+}
+
+/* ===== Footer ===== */
+#faza_footer {
+  background: var(--faza_ink);
+  color: #cfd8d3;
+  padding: 2.5rem 0;
+  margin-top: 2rem;
+}
+#faza_footer .faza_grid {
+  margin-bottom: 1rem;
+}
+#faza_footer a {
+  display: block;
+  text-decoration: none;
+  padding: 0.1rem 0;
+}
+#faza_footer a:hover {
+  color: var(--faza_kuning);
+}
+.faza_testi {
+  font-size: 1.2rem;
+  min-height: 6rem;
+}
+
+/* ===== Responsif ===== */
+@media (max-width: 820px) {
+  #faza_tombol_nav {
+    display: block;
+  }
+  #faza_menu_nav {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    background: var(--faza_ink);
+    flex-direction: column;
+    padding: 0.5rem 4%;
+  }
+  #faza_menu_nav.faza_buka {
+    display: flex;
+  }
+  .faza_hero,
+  .faza_dua {
+    grid-template-columns: 1fr;
+  }
+  .faza_struk {
+    position: static;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  * {
+    scroll-behavior: auto !important;
+  }
+}

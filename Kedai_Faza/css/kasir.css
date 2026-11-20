@@ -1,0 +1,17 @@
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+}
+/* Hide scrollbars for slick mobile look */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.btn-active:active {
+  transform: scale(0.96);
+}

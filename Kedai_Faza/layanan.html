@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Layanan | Kedai Faza</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700;800&family=Figtree:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header id="faza_header">
+      <div class="faza_wrap">
+        <a class="faza_logo" href="index.html">Kedai Faza</a>
+        <button id="faza_tombol_nav" aria-expanded="false" aria-controls="faza_menu_nav">
+          Menu ☰
+        </button>
+        <ul id="faza_menu_nav">
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="tentang.html">Tentang</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="layanan.html" aria-current="page">Layanan</a></li>
+          <li><a href="galeri.html">Galeri</a></li>
+          <li><a href="kasir.html">Kasir</a></li>
+          <li><a href="kontak.html">Kontak</a></li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section class="faza_judul_halaman">
+        <div class="faza_wrap">
+          <h1 class="faza_judul">Layanan Kami</h1>
+          <p>Dari satu porsi sampai ratusan porsi untuk acara Anda.</p>
+        </div>
+      </section>
+      <section class="faza_section">
+        <div class="faza_wrap">
+          <div class="faza_grid">
+            <div class="faza_kartu">
+              <span class="faza_ikon">🪑</span>
+              <h3>Makan di tempat</h3>
+              <p>12 kursi, bersih, dan ada colokan listrik.</p>
+            </div>
+            <div class="faza_kartu">
+              <span class="faza_ikon">🛵</span>
+              <h3>Pesan antar</h3>
+              <p>Antar gratis radius 3 km untuk pembelian di atas Rp 50.000.</p>
+            </div>
+            <div class="faza_kartu">
+              <span class="faza_ikon">🎉</span>
+              <h3>Katering acara</h3>
+              <p>Paket arisan, pengajian, dan rapat kantor.</p>
+            </div>
+            <div class="faza_kartu">
+              <span class="faza_ikon">📱</span>
+              <h3>Aplikasi kasir</h3>
+              <p>Kasir, stok, kasbon, dan laporan. <a href="kasir.html">Buka</a>.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="faza_section">
+        <div class="faza_wrap">
+          <h2 class="faza_judul">Hitung biaya katering</h2>
+          <div class="faza_formulir" style="max-width: 480px">
+            <div>
+              <label for="faza_paket">Paket</label
+              ><select id="faza_paket">
+                <option value="15000">Baso Tahu Komplit (Rp 15.000)</option>
+                <option value="18000">Mie Yamin Baso (Rp 18.000)</option>
+                <option value="10000">Jus Alpukat (Rp 10.000)</option>
+              </select>
+            </div>
+            <div>
+              <label for="faza_porsi">Jumlah porsi</label
+              ><input id="faza_porsi" type="number" min="0" value="20" />
+            </div>
+            <p>Perkiraan total: <span id="faza_hasil" class="faza_hasil"></span></p>
+            <p>Pemesanan 50 porsi atau lebih mendapat diskon 10%.</p>
+          </div>
+        </div>
+      </section>
+      <section class="faza_section">
+        <div class="faza_wrap">
+          <h2 class="faza_judul">Pertanyaan umum</h2>
+          <details class="faza_faq">
+            <summary>Apakah bisa pesan untuk besok pagi?</summary>
+            <p>
+              Bisa. Kirim pesanan lewat <a href="kontak.html">halaman kontak</a> paling lambat pukul
+              20.00.
+            </p>
+          </details>
+          <details class="faza_faq">
+            <summary>Metode pembayaran apa saja?</summary>
+            <p>Tunai dan QRIS. Pelanggan langganan bisa kasbon dengan persetujuan pemilik.</p>
+          </details>
+          <details class="faza_faq">
+            <summary>Apakah bahan makanan halal?</summary>
+            <p>Semua bahan halal dan dibeli segar setiap hari.</p>
+          </details>
+        </div>
+      </section>
+    </main>
+    <footer id="faza_footer">
+      <div class="faza_wrap">
+        <div class="faza_grid">
+          <div>
+            <strong class="faza_judul" style="color: #f6c445; font-size: 1.3rem"
+              >Kedai Faza</strong
+            >
+            <p>Baso tahu, mie, dan aneka jus. Dikelola rapi dengan aplikasi kasir sendiri.</p>
+          </div>
+          <div>
+            <a href="index.html">Beranda</a><a href="tentang.html">Tentang</a
+            ><a href="menu.html">Menu</a><a href="layanan.html">Layanan</a
+            ><a href="galeri.html">Galeri</a><a href="kasir.html">Kasir</a
+            ><a href="kontak.html">Kontak</a>
+          </div>
+          <div>
+            <p>
+              Buka setiap hari 08.00–21.00<br />WA: 0812-3456-7890<br />halo@kedaifaza.id
+            </p>
+          </div>
+        </div>
+        <p>
+          © <span id="faza_tahun"></span> Kedai Faza. 
+        </p>
+      </div>
+    </footer>
+    <script src="js/data.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/katering.js"></script>
+  </body>
+</html>

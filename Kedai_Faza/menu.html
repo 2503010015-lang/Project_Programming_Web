@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Menu | Kedai Faza</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700;800&family=Figtree:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header id="faza_header">
+      <div class="faza_wrap">
+        <a class="faza_logo" href="index.html">Kedai Faza</a>
+        <button id="faza_tombol_nav" aria-expanded="false" aria-controls="faza_menu_nav">
+          Menu ☰
+        </button>
+        <ul id="faza_menu_nav">
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="tentang.html">Tentang</a></li>
+          <li><a href="menu.html" aria-current="page">Menu</a></li>
+          <li><a href="layanan.html">Layanan</a></li>
+          <li><a href="galeri.html">Galeri</a></li>
+          <li><a href="kasir.html">Kasir</a></li>
+          <li><a href="kontak.html">Kontak</a></li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section class="faza_judul_halaman">
+        <div class="faza_wrap">
+          <h1 class="faza_judul">Menu Kedai</h1>
+          <p>Pilih kategori, cari menu, lalu tambahkan ke struk pesanan.</p>
+        </div>
+      </section>
+      <section class="faza_section">
+        <div class="faza_wrap">
+          <div class="faza_filter">
+            <button class="faza_aktif" data-kat="semua">Semua</button
+            ><button data-kat="basotahu">Baso Tahu</button><button data-kat="mie">Mie</button
+            ><button data-kat="jus">Aneka Jus</button><button data-kat="sachet">Sachet</button>
+            <input
+              id="faza_cari"
+              type="search"
+              placeholder="Cari menu..."
+              aria-label="Cari menu"
+            />
+          </div>
+          <div class="faza_dua">
+            <div id="faza_grid" class="faza_grid"></div>
+            <aside class="faza_struk" aria-label="Struk pesanan">
+              <h3>Struk Pesanan</h3>
+              <ul id="faza_struk_isi"></ul>
+              <div class="faza_struk_total">
+                <span>TOTAL</span><span id="faza_struk_total">Rp 0</span>
+              </div>
+              <a id="faza_wa" class="faza_tombol" href="#" target="_blank" rel="noopener"
+                >Pesan via WhatsApp</a
+              >
+            </aside>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="faza_footer">
+      <div class="faza_wrap">
+        <div class="faza_grid">
+          <div>
+            <strong class="faza_judul" style="color: #f6c445; font-size: 1.3rem"
+              >Kedai Faza</strong
+            >
+            <p>Baso tahu, mie, dan aneka jus. Dikelola rapi dengan aplikasi kasir sendiri.</p>
+          </div>
+          <div>
+            <a href="index.html">Beranda</a><a href="tentang.html">Tentang</a
+            ><a href="menu.html">Menu</a><a href="layanan.html">Layanan</a
+            ><a href="galeri.html">Galeri</a><a href="kasir.html">Kasir</a
+            ><a href="kontak.html">Kontak</a>
+          </div>
+          <div>
+            <p>
+              Buka setiap hari 08.00–21.00<br />WA: 0812-3456-7890<br />halo@kedaifaza.id
+            </p>
+          </div>
+        </div>
+        <p>
+          © <span id="faza_tahun"></span> Kedai Faza. 
+        </p>
+      </div>
+    </footer>
+    <script src="js/data.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/pesanan.js"></script>
+  </body>
+</html>

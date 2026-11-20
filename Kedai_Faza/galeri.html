@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Galeri | Kedai Faza</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700;800&family=Figtree:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header id="faza_header">
+      <div class="faza_wrap">
+        <a class="faza_logo" href="index.html">Kedai Faza</a>
+        <button id="faza_tombol_nav" aria-expanded="false" aria-controls="faza_menu_nav">
+          Menu ☰
+        </button>
+        <ul id="faza_menu_nav">
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="tentang.html">Tentang</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="layanan.html">Layanan</a></li>
+          <li><a href="galeri.html" aria-current="page">Galeri</a></li>
+          <li><a href="kasir.html">Kasir</a></li>
+          <li><a href="kontak.html">Kontak</a></li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section class="faza_judul_halaman">
+        <div class="faza_wrap">
+          <h1 class="faza_judul">Galeri</h1>
+          <p>Sajian dan suasana Kedai Faza.</p>
+        </div>
+      </section>
+      <section class="faza_section">
+        <div class="faza_wrap">
+          <p style="margin-bottom: 1rem">
+            Klik atau tekan Enter pada kotak untuk memperbesar.
+          </p>
+          <div class="faza_grid">
+            <div class="faza_ubin" data-cap="Baso tahu komplit">🍢</div>
+            <div class="faza_ubin" data-cap="Siomay kukus">🥟</div>
+            <div class="faza_ubin" data-cap="Mie yamin baso">🍜</div>
+            <div class="faza_ubin" data-cap="Mie kuah pedas">🌶️</div>
+            <div class="faza_ubin" data-cap="Jus alpukat">🥑</div>
+            <div class="faza_ubin" data-cap="Jus mangga">🥭</div>
+            <div class="faza_ubin" data-cap="Es teh manis">🍹</div>
+            <div class="faza_ubin" data-cap="Kopi hitam">☕</div>
+          </div>
+        </div>
+      </section>
+      <div id="faza_lightbox" role="dialog" aria-label="Pratinjau galeri">
+        <div id="faza_lb_isi"></div>
+        <p id="faza_lb_cap"></p>
+        <div>
+          <button id="faza_lb_prev" class="faza_tombol">◀</button>
+          <button id="faza_lb_tutup" class="faza_tombol faza_tombol_alt">Tutup</button>
+          <button id="faza_lb_next" class="faza_tombol">▶</button>
+        </div>
+      </div>
+    </main>
+    <footer id="faza_footer">
+      <div class="faza_wrap">
+        <div class="faza_grid">
+          <div>
+            <strong class="faza_judul" style="color: #f6c445; font-size: 1.3rem"
+              >Kedai Faza</strong
+            >
+            <p>Baso tahu, mie, dan aneka jus. Dikelola rapi dengan aplikasi kasir sendiri.</p>
+          </div>
+          <div>
+            <a href="index.html">Beranda</a><a href="tentang.html">Tentang</a
+            ><a href="menu.html">Menu</a><a href="layanan.html">Layanan</a
+            ><a href="galeri.html">Galeri</a><a href="kasir.html">Kasir</a
+            ><a href="kontak.html">Kontak</a>
+          </div>
+          <div>
+            <p>
+              Buka setiap hari 08.00–21.00<br />WA: 0812-3456-7890<br />halo@kedai faza.id
+            </p>
+          </div>
+        </div>
+        <p>
+          © <span id="faza_tahun"></span> Kedai Faza. 
+        </p>
+      </div>
+    </footer>
+    <script src="js/data.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/galeri.js"></script>
+  </body>
+</html>

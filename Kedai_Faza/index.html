@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Beranda | Kedai Faza</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700;800&family=Figtree:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header id="faza_header">
+      <div class="faza_wrap">
+        <a class="faza_logo" href="index.html">Kedai Faza</a>
+        <button id="faza_tombol_nav" aria-expanded="false" aria-controls="faza_menu_nav">
+          Menu ☰
+        </button>
+        <ul id="faza_menu_nav">
+          <li><a href="index.html" aria-current="page">Beranda</a></li>
+          <li><a href="tentang.html">Tentang</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="layanan.html">Layanan</a></li>
+          <li><a href="galeri.html">Galeri</a></li>
+          <li><a href="kasir.html">Kasir</a></li>
+          <li><a href="kontak.html">Kontak</a></li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <div class="faza_wrap faza_hero">
+        <div>
+          <h1 class="faza_judul">Baso tahu panas, jus dingin, catatan rapi.</h1>
+          <p>
+            Kedai Faza melayani makan di tempat, pesan antar, dan katering. Coba susun
+            pesanan Anda di struk sebelah, lalu kirim lewat WhatsApp.
+          </p>
+          <a class="faza_tombol" href="menu.html">Lihat Menu Lengkap</a>
+          <a class="faza_tombol faza_tombol_alt" href="kontak.html">Hubungi Kami</a>
+        </div>
+        <aside class="faza_struk" aria-label="Struk pesanan">
+          <h3>Struk Pesanan</h3>
+          <ul id="faza_struk_isi"></ul>
+          <div class="faza_struk_total">
+            <span>TOTAL</span><span id="faza_struk_total">Rp 0</span>
+          </div>
+          <a id="faza_wa" class="faza_tombol" href="#" target="_blank" rel="noopener"
+            >Pesan via WhatsApp</a
+          >
+        </aside>
+      </div>
+      <section class="faza_section">
+        <div class="faza_wrap">
+          <h2 class="faza_judul">Menu andalan</h2>
+          <div id="faza_grid" class="faza_grid" data-batas="4"></div>
+        </div>
+      </section>
+      <section class="faza_section">
+        <div class="faza_wrap">
+          <h2 class="faza_judul">Cara memesan</h2>
+          <div class="faza_grid">
+            <div class="faza_kartu">
+              <h3>1. Pilih menu</h3>
+              <p>Tambahkan makanan dan minuman favorit ke struk.</p>
+            </div>
+            <div class="faza_kartu">
+              <h3>2. Kirim pesanan</h3>
+              <p>Tekan tombol WhatsApp, pesan sudah terisi otomatis.</p>
+            </div>
+            <div class="faza_kartu">
+              <h3>3. Ambil atau diantar</h3>
+              <p>Datang ke kedai, atau tunggu diantar ke rumah.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="faza_section">
+        <div class="faza_wrap">
+          <h2 class="faza_judul">Kata pelanggan</h2>
+          <p id="faza_testi" class="faza_testi" aria-live="polite"></p>
+        </div>
+      </section>
+    </main>
+    <footer id="faza_footer">
+      <div class="faza_wrap">
+        <div class="faza_grid">
+          <div>
+            <strong class="faza_judul" style="color: #f6c445; font-size: 1.3rem"
+              >Kedai Faza</strong
+            >
+            <p>Baso tahu, mie, dan aneka jus. Dikelola rapi dengan aplikasi kasir sendiri.</p>
+          </div>
+          <div>
+            <a href="index.html">Beranda</a><a href="tentang.html">Tentang</a
+            ><a href="menu.html">Menu</a><a href="layanan.html">Layanan</a
+            ><a href="galeri.html">Galeri</a><a href="kasir.html">Kasir</a
+            ><a href="kontak.html">Kontak</a>
+          </div>
+          <div>
+            <p>
+              Buka setiap hari 08.00–21.00<br />WA: 0812-3456-7890<br />halo@kedai faza.id
+            </p>
+          </div>
+        </div>
+        <p>
+          © <span id="faza_tahun"></span> Kedai Faza. 
+        </p>
+      </div>
+    </footer>
+    <script src="js/data.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/pesanan.js"></script>
+    <script src="js/testimoni.js"></script>
+  </body>
+</html>
